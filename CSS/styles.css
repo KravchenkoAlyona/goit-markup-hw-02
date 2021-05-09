@@ -4,6 +4,8 @@
   --accent-text-color: #2196f3;
   --main-title-color: #ffffff;
   --footer-links-color: rgba(255, 255, 255, 0.6);
+  --footer-background: #2f303a;
+  --team-background: #f5f4fa;
 }
 
 body {
@@ -21,13 +23,16 @@ body {
 }
 .logo-studio {
   color: var(--primary-text-color);
-  font-family: Raleway, sans-serif;
 }
 ul {
   list-style: none;
 }
 .link {
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .link:hover,
 .link:focus {
@@ -56,6 +61,10 @@ ul {
   text-decoration: none;
 }
 /* Эффективные решения для бизнесса */
+.hero {
+  background-color: var(--footer-background);
+  text-transform: uppercase;
+}
 .button-first {
   background-color: var(--accent-text-color);
   color: var(--main-title-color);
@@ -85,7 +94,7 @@ button {
 }
 .title {
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -93,6 +102,7 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 /* Наша команда */
 .title-names {
@@ -109,11 +119,13 @@ button {
 
   letter-spacing: 0.03em;
 }
+.team {
+  background-color: var(--team-background);
+}
 /* подвал */
 .footer-contacts {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-links-color);
   text-decoration: none;
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -127,7 +139,6 @@ button {
 }
 .adress {
   color: var(--main-title-color);
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -136,11 +147,11 @@ button {
   letter-spacing: 0.03em;
 }
 .logo-studio-footer {
-  color: #ffffff;
+  color: var(--main-title-color);
 }
 /* portfolio css */
 .button-second {
-  background-color: #f5f4fa;
+  background-color: var(--team-background);
   font-weight: 500;
   font-size: 16px;
   line-height: 2.76;
@@ -151,12 +162,11 @@ button {
 .button-second:hover,
 .button-second:focus {
   background-color: var(--accent-text-color);
-  color: #ffffff;
+  color: var(--main-title-color);
 }
 .title-portfolio {
   font-size: 18px;
   line-height: 2;
-
   letter-spacing: 0.06em;
 }
 .portfolio {
@@ -165,4 +175,12 @@ button {
   line-height: 1.87;
 
   letter-spacing: 0.03em;
+}
+
+.filters-cards {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.footer {
+  background-color: var(--footer-background);
 }
